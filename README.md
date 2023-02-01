@@ -107,21 +107,36 @@ In our CSV file we have column "node_community" where write groups (1, 2 or 3).
 
 In the first group locate only "0" node. Second group has 4 nodes and third group contains 10 nodes.
 
+Then, call the function create_interactive_graph(parameters), where node_layout = "community":
 ```python
 g = InteractiveGraph(graph_data,
-                     node_layout='community',  # or you can use pos - X, Y axis
+                     node_layout='community',
                      # if you use node_layout='community', you should clarify node_layout_kwargs:
                      node_layout_kwargs=dict(node_to_community=node_community),
                      ... # rest peace of code the same
 ```
+Node's background color and node's label size automatically change too.
+
+
+As a result you will get graph like this:
+![interactive_graph](https://user-images.githubusercontent.com/106172806/216050830-59d69cd5-7c38-4037-a574-99de6c146bc7.png)
 ___
 
 ### *Editable Graph*
+The third one is a graph where we can edit any parameters, add new nodes and edges, create an annotation and so on.
 
+This time we will use "dot" node layot, which create serial chain of our nodes.
+
+Code of Editable Graph looks like this one: 
 ```python
 def create_editable_graph(graph_data, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds):
 g = EditableGraph(graph_data,
                   node_layout='dot',
                   ... # rest peace of code the same
 ```
+
+![editable_graph](https://user-images.githubusercontent.com/106172806/216053747-97d11a1b-4069-44ee-a340-b424b3c57982.png)
+
+After creation Editable graph, let's update it. We will add some descriptions, nodes and edges:
+
 ___
