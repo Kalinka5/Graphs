@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
                 # Add edge labels to variable, for example: {("0", "1"): "operate", ("0", "2"): "operate",...}
                 edge_labels[(row["first_node"], row["second_node"])] = row["edge_label"]
-                
+
                 # Add edge color to variable, for example: {("0", "1"): "red",... ("1", "5"): "green",...}
                 edge_color[(row["first_node"], row["second_node"])] = row["edge_color"]
 
@@ -61,7 +61,7 @@ if __name__ == '__main__':
         # g = create_graph(graph_data, pos, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
 
         # Create EditableGraph
-        eg = create_editable_graph(graph_data, node_community, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
+        eg = create_editable_graph(graph_data, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
 
         # Show our Graph
         plt.show()
