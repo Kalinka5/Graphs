@@ -25,6 +25,6 @@ def create_graph(graph_data, pos, size, color_n, labels_n, shapes, edge_labels, 
     # We can control font size of our node labels
     for node, label in g.node_label_artists.items():
         fontsize = label.get_fontsize()
-        label.set_fontsize(fontsize * 5)
+        label.set_fontsize(fontsize * 7)
 
     return g

@@ -33,7 +33,6 @@ if __name__ == '__main__':
             label_backgrounds[row["node"]] = row["background_color"]
 
             if row["first_node"] != "":
-
                 # Add edges to variable, for example: {("0", "1"), ("0", "2"),...}
                 edges.append((row["first_node"], row["second_node"]))
 
@@ -43,15 +42,12 @@ if __name__ == '__main__':
                 # Add edge color to variable, for example: {("0", "1"): "red",... ("1", "5"): "green",...}
                 edge_color[(row["first_node"], row["second_node"])] = row["edge_color"]
 
-        # I don't know what it is
-        # fig, (ax1, ax2) = plt.subplots(1, 2)
-        fig, ax = plt.subplots()
-
         # Create DiGraph
         graph_data = nx.DiGraph(edges)
 
-        # Create Interactive_Graph
-        # ig = create_interactive_graph(graph_data, node_community, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
+        # Creating 2 graphs on one sheet
+        # fig, (ax1, ax2) = plt.subplots(1, 2)
+        fig, ax = plt.subplots()
 
         # Create Graph
         # Create position of each element on sheet by X-axis and Y-axis (X, Y)
@@ -59,6 +55,9 @@ if __name__ == '__main__':
         #        "7": (-1.5, -1), "8": (-1, -1), "9": (-0.5, -1), "10": (0, -1), "11": (0.5, -1), "12": (1, -1),
         #        "13": (1.5, -1), "14": (2, -1)}
         # g = create_graph(graph_data, pos, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
+
+        # Create Interactive_Graph
+        # ig = create_interactive_graph(graph_data, node_community, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
 
         # Create EditableGraph
         eg = create_editable_graph(graph_data, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds)
