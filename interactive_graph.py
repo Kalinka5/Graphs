@@ -3,7 +3,7 @@ from netgraph import InteractiveGraph
 
 def create_interactive_graph(graph_data, node_community, size, color_n, labels_n, shapes, edge_labels, edge_color, ax, label_backgrounds):
     g = InteractiveGraph(graph_data,
-                         node_layout='community',  # or you can use pos - X, Y axis
+                         node_layout='community',
                          # if you use node_layout='community', you should clarify node_layout_kwargs:
                          node_layout_kwargs=dict(node_to_community=node_community),
                          node_size=size,
