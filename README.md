@@ -117,6 +117,10 @@ g = InteractiveGraph(graph_data,
 ```
 Node's background color and node's label size automatically change too.
 
+As we create Interactive graph, unfortunately It doesn't look like as we need. Since we used community position, nodes locates by different groups.
+So, let's move our nodes to great layot:
+
+![interactive_graph](https://user-images.githubusercontent.com/106172806/216788092-5c8fb3d6-6adf-4062-a5b0-300cc3fd6ab8.gif)
 
 As a result you will get graph like this:
 ![interactive_graph](https://user-images.githubusercontent.com/106172806/216050830-59d69cd5-7c38-4037-a574-99de6c146bc7.png)
@@ -135,8 +139,13 @@ g = EditableGraph(graph_data,
                   ... # rest peace of code the same
 ```
 
-![editable_graph](https://user-images.githubusercontent.com/106172806/216053747-97d11a1b-4069-44ee-a340-b424b3c57982.png)
+After creation Editable graph, let's update it. We will add some descriptions:
 
-After creation Editable graph, let's update it. We will add some descriptions, nodes and edges:
+![editable_graph](https://user-images.githubusercontent.com/106172806/216788118-74b701cb-c297-42a7-aa5c-32675c0e288b.gif)
+
+Furthermore, you can add new nodes and edges to our drawing, but as for this graph we don't need it. Also, you can read about editing graph in this [link](https://github.com/paulbrodersen/netgraph), where in README file fully explained it.
+
+At the end, you can get this graph:
+![editable_graph](https://user-images.githubusercontent.com/106172806/216053747-97d11a1b-4069-44ee-a340-b424b3c57982.png)
 
 ___
