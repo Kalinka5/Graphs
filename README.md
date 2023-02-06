@@ -97,7 +97,7 @@ for node, label in g.node_label_artists.items():
     label.set_fontsize(fontsize * 5)
 ```
 
-:globe_with_meridians: As a result we will **get graph like this one:**
+:white_check_mark: As a result we will **get graph like this one:**
 ![graph](https://user-images.githubusercontent.com/106172806/216035828-dcf1201d-a9f1-4774-9ff3-f96d828d1bb2.png)
 ___
 
@@ -121,7 +121,7 @@ g = InteractiveGraph(graph_data,
 
 ![interactive_graph](https://user-images.githubusercontent.com/106172806/216788092-5c8fb3d6-6adf-4062-a5b0-300cc3fd6ab8.gif)
 
-:hotsprings: As a result, you will **get graph like this:**
+:white_check_mark: As a result, you will **get graph like this:**
 ![interactive_graph](https://user-images.githubusercontent.com/106172806/216050830-59d69cd5-7c38-4037-a574-99de6c146bc7.png)
 ___
 
@@ -144,7 +144,7 @@ g = EditableGraph(graph_data,
 
 :dizzy: Furthermore, you can **add new nodes and edges** to our drawing, but as for this graph we don't need it. Also, you can read about editing graph in this [link](https://github.com/paulbrodersen/netgraph), where in README file fully explained it.
 
-:dizzy: At the end, you can **get this graph:**
+:white_check_mark: At the end, you can **get this graph:**
 ![editable_graph](https://user-images.githubusercontent.com/106172806/216053747-97d11a1b-4069-44ee-a340-b424b3c57982.png)
 
 ___
